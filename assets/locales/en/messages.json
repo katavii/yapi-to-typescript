@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "json-to-typescript"
+    },
+    "appShortName": {
+        "message": "json-to-typescript"
+    },
+    "appDescription": {
+        "message": "test"
+    }
+}

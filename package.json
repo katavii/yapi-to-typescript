@@ -1,0 +1,67 @@
+{
+  "name": "json-to-typescript",
+  "description": "Compile json schema to typescript typings",
+  "version": "0.0.2",
+  "author": "liqiang",
+  "repository": {
+    "type": "git",
+    "url": "ENTER GIT REPO URL"
+  },
+  "scripts": {
+    "start": "xt-build -e dev -w",
+    "start:firefox": "xt-build -e dev -p firefox -w",
+    "build": "xt-build -e prod",
+    "build:firefox": "xt-build -e prod -p firefox",
+    "clean": "xt-clean",
+    "docs": "xt-docs",
+    "test": "xt-test",
+    "sync": "xt-sync"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintIgnore": [
+    "test/**/*"
+  ],
+  "devDependencies": {
+    "extension-cli": "latest"
+  },
+  "xtdocs": {
+    "source": {
+      "include": [
+        "README.md",
+        "src"
+      ]
+    },
+    "templates": {
+      "systemName": "json-to-typescript",
+      "systemSummary": "test",
+      "systemColor": "#4CAF50"
+    }
+  },
+  "xtbuild": {
+    "js_bundles": [
+      {
+        "name": "background",
+        "src": "./src/index.js"
+      },
+      {
+        "name": "content",
+        "src": "./src/content/*"
+      }
+    ],
+    "scss_bundles": [
+      {
+        "src": [
+          "./src/style/*.scss"
+        ],
+        "name": "styles"
+      }
+    ]
+  },
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
+}

@@ -1,0 +1,61 @@
+.jstt {
+  color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  right: 5px;
+  top: 200px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px -1px rgba(26, 192, 128, 0.5);
+  padding: 8px 12px;
+  width: 180px;
+}
+
+.jstt-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.jstt-res-btn {
+  border-radius: 2px;
+  background-color: rgba(26, 192, 198, 0.8);
+  border: 1px solid rgb(26, 192, 198);
+  color: white;
+  margin-right: 8px;
+}
+
+.jstt-req-btn {
+  border-radius: 2px;
+  background-color: rgba(255, 168, 34, 0.8);
+  border: 1px solid rgb(255, 168, 34);
+  color: white;
+}
+
+/* co */
+.jstt-msg {
+  position: fixed;
+  top: 150px;
+  right: 0;
+  color: #fff;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  padding: 6px 12px 6px 7px;
+  height: 30px;
+  opacity: 0.8;
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+  transition: all 0.4s ease-in;
+}
+.jstt-msg.is-leaving {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.jstt-msg div {
+  flex: 1;
+}
+.jstt-msg img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}

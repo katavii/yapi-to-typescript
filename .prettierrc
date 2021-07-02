@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ".stylelintrc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
