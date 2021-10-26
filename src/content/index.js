@@ -46,7 +46,7 @@ function request() {
     );
     httpRequest.open(
       'GET',
-      'https://' +
+      '//' +
         window.location.host +
         '/api/interface/get?id=' +
         interfaceId,
